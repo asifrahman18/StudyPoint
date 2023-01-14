@@ -1,1 +1,1 @@
-# StudyPoint
+# Study-Point-Coaching-Center

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/owl.theme.default.min.css"
+    />
+
+    <!-- custom css file link up -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <style>
+      .headr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+        border: 1px solid black;
+      }
+      .zigzag {
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+      }
+
+      .zigzag tbody tr {
+        border-bottom: 1px solid #dddddd;
+      }
+
+      .zigzag th,
+      .zigzag td {
+        padding: 12px 15px;
+        border: 1px solid rgb(255, 255, 255);
+      }
+
+      .zigzag td {
+        background-color: rgb(9, 54, 232);
+        color: #ffffff;
+      }
+    </style>
+
+    <title>Coaching Centre</title>
+  </head>
+  <body>
+    <header>
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">STUDY POINT</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="home.html"
+                        >Home <span class="sr-only">(current)</span></a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="teachers.html">Teachers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="s-out" href="index.html"
+                        >Sign Out</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <table class="zigzag" id="tabl">
+          <thead>
+            <tr>
+              <th class="headr"><b>Course Code</b></th>
+              <th class="headr"><b>Course Name</b></th>
+              <th class="headr"><b>Teacher Name</b></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <?php
+              
+              if(isset($_POST['submit'])){
+                  
+         
+  
+              $_SESSION['from']= $_POST['loc_from'];
+              $_SESSION['to']= $_POST['loc_to'];
+  
+              
+              $loca_from = $_SESSION['from'];
+              $loca_to = $_SESSION['to'];
+  
+                  $query = "SELECT bus.Bus_Name, route.Staring, route.Destination, bus.Type, bus.Seat_lft, bus.Bus_ID FROM bus, route WHERE route.Staring = '$loca_from' AND route.Destination = '$loca_to' AND bus.Route_ID = route.R_ID";
+                  $data = mysqli_query($conn,$query);
+                  $row = mysqli_fetch_array($data, MYSQLI_ASSOC); 
+                  $total = mysqli_num_rows($data);
+  
+  
+                  $result = $conn->query($query); if ($result->num_rows > 0) {
+          while($row = $result->fetch_assoc()) { ?> -->
+
+            <tr>
+              <!-- <td><?php echo  $row["Bus_Name"]; ?></td>
+            <td><?php echo  $row["Staring"]; ?></td>
+            <td><?php echo  $row["Destination"]; ?></td>
+            <td><?php echo  $row["Type"]; ?></td>
+            <td><?php echo  $row["Seat_lft"]; ?></td>
+            <td class="bid"><?php echo  $row["Bus_ID"]; ?></td> -->
+              <td>ENG101</td>
+              <td>Intorduction To English</td>
+              <td>MM Jossim Neymar</td>
+            </tr>
+
+            <!-- <?php
+                      
+                  }
+                  } else {
+                  echo "No Bus available";
+                  }
+  
+                  exit();
+  
+              }
+  
+  
+          ?> -->
+          </tbody>
+        </table>
+      </div>
+    </header>
+  </body>
+</html>
